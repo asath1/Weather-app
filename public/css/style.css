@@ -76,6 +76,11 @@ body {
     border-radius: 4px;
 }
 
+@media screen and (max-width:1050px){
+    #main-div{
+       padding-top: 20px;
+    }
+  }
 
 /* skill section */
 
