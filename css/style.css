@@ -1,0 +1,189 @@
+body {
+    font-size: 14px;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+/* title message */
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    top: 50%;
+    z-index: 6;
+    text-align: center;
+    margin-top: -120px;
+}
+
+
+.titleMessage .heading p {
+    color: #fff;
+    text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+    font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+    font-size: 23px;
+}
+/* slides */
+
+.slides-navigation .prev,
+.slides-navigation .next {
+    width: 37px;
+    height: 37px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 15px;
+    background-image: url(../images/icons/prev.png);
+}
+.slides-navigation a.next {
+    right: 15px;
+    background-image: url(../images/icons/next.png);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+
+/* profile */
+
+.section {
+    padding: 100px 0 100px 0;
+}
+
+
+.aboutImage {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* skill section */
+
+.skillsSection {
+    background-color: #dcdcdc;
+}
+
+.skill {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart {
+   position: relative;
+   width: 152px; 
+   height: 152px;
+   display: inline-block;
+   text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+  line-height: 152px;  
+  display: inline-block;
+  font-size: 30px;
+}
+
+.chart .percent::after {
+    content: "%";
+}
+
+
+/* copyright section */
+
+.copyrightSection {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 5px;  
+}
+
+.copyrightSection p {
+    margin: 0;
+}
+
+
+/* navigation */
+
+#navigation {
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color:#dcdcdc
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0
+}
+
+
+/* experience */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: 7%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 15px;
+  }
